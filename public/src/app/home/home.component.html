@@ -1,0 +1,19 @@
+<section>
+    <div class="container" style="background-color: white;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg" *ngFor="let img of Images" data-aos="flip-left">
+                    <img [src]="img.src" [alt]="img.alt">
+                    <div class="card-title">
+                        <h1>{{img.title}}</h1>
+                        <div class="card-descr">
+                            <p>{{img.desc}}</p>
+                            <button class="btn btn-outline-primary">{{img.btn}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
